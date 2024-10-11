@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  yeogi-test
-//
-//  Created by Jerry Kim on 10/11/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -13,7 +6,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("YEOGI TEST")
         }
         .padding()
     }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "eeff8ceb144b5c32f6f60c0ff4678041d00910e65da863a47ff39cb20f89a87b",
+  "pins" : [
+    {
+      "identity" : "appier-ios-framework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appier/appier-ios-framework",
+      "state" : {
+        "revision" : "8ec74ddf9f1131c3c867b85e156188521efdb4ee",
+        "version" : "7.34.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C4E924462CB8CA77004A18A8 /* AppierExtensionFramework in Frameworks */ = {isa = PBXBuildFile; productRef = C4E924452CB8CA77004A18A8 /* AppierExtensionFramework */; };
+		C4E924482CB8CA77004A18A8 /* AppierFramework in Frameworks */ = {isa = PBXBuildFile; productRef = C4E924472CB8CA77004A18A8 /* AppierFramework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C4E9242F2CB8C4C8004A18A8 /* yeogi-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yeogi-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C4E9244A2CB8CBC0004A18A8 /* Exceptions for "yeogi-test" folder in "yeogi-test" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C4E9242E2CB8C4C8004A18A8 /* yeogi-test */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C4E924312CB8C4C8004A18A8 /* yeogi-test */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C4E9244A2CB8CBC0004A18A8 /* Exceptions for "yeogi-test" folder in "yeogi-test" target */,
+			);
 			path = "yeogi-test";
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E924482CB8CA77004A18A8 /* AppierFramework in Frameworks */,
+				C4E924462CB8CA77004A18A8 /* AppierExtensionFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = "yeogi-test";
 			packageProductDependencies = (
+				C4E924452CB8CA77004A18A8 /* AppierExtensionFramework */,
+				C4E924472CB8CA77004A18A8 /* AppierFramework */,
 			);
 			productName = "yeogi-test";
 			productReference = C4E9242F2CB8C4C8004A18A8 /* yeogi-test.app */;
@@ -94,6 +116,9 @@
 			);
 			mainGroup = C4E924262CB8C4C8004A18A8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C4E924442CB8CA77004A18A8 /* XCRemoteSwiftPackageReference "appier-ios-framework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C4E924302CB8C4C8004A18A8 /* Products */;
 			projectDirPath = "";
@@ -252,6 +277,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "yeogi-test/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,6 +317,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "yeogi-test/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,6 +366,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4E924442CB8CA77004A18A8 /* XCRemoteSwiftPackageReference "appier-ios-framework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appier/appier-ios-framework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.34.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4E924452CB8CA77004A18A8 /* AppierExtensionFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4E924442CB8CA77004A18A8 /* XCRemoteSwiftPackageReference "appier-ios-framework" */;
+			productName = AppierExtensionFramework;
+		};
+		C4E924472CB8CA77004A18A8 /* AppierFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4E924442CB8CA77004A18A8 /* XCRemoteSwiftPackageReference "appier-ios-framework" */;
+			productName = AppierFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4E924272CB8C4C8004A18A8 /* Project object */;
 }
